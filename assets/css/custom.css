@@ -142,3 +142,15 @@ label.btn-shop{
 .webinar-row .education_block_grid .cources_info{
   padding: 5px 20px 15px;
 }
+
+.category-nav .nav-link.active{
+  color: #da0b4e;
+}
+
+.category-nav .nav-link{
+  padding-left: 0;
+}
+
+.category-sidebar{
+  padding: 2rem;
+}
