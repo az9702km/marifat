@@ -117,7 +117,7 @@
 								<div class="article_body_wrap">
 								
 									<div class="article_featured_image">
-										<img class="img-fluid" src="assets/img/blog/blog-1.png" alt="">
+										<img class="w-100" src="assets/img/blog/blog-1.png" alt="">
 									</div>
 									
 									<div class="article_top_info d-flex flex-column flex-md-row">
@@ -125,19 +125,11 @@
 											<li><a href="#"><span class="icons"><i class="ti-user"></i></span>Akbarshox Rasulov</a></li>
 											<li><span class="icons mr-2"><i class="ti-calendar"></i></span>12 Iyun, 2021</a></li>
 										</ul>
-												
-										<div class="cources_facts px-0 d-flex justify-content-end">
-											<ul class="cources_facts_list">
-												<li><a href="#!"> Category-1</a></li>
-												<li><a href="#!"> Category-2</a></li>
-												<li><a href="#!"> Category-3</a></li>
-											</ul>
-										</div>
 									</div>
+									<h6 class="mb-3 mt-5 category-name"><a href="#!">Category name</a></h6>
 									<h2 class="post-title">Qabul–2021: Abituriyentlarni qanday yangiliklar kutyapti?</h2>
-									<button class="btn btn-outline-theme btn-rounded btn-sm mt-4">Maqolani saqlab qo'yish</button>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-										labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+									<button class="btn btn-outline-theme btn-rounded btn-sm mt-4"><i class="fas fa-bookmark mr-2"></i>Maqolani saqlab qo'yish</button>
+									<p>ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
 									<blockquote>
 										<span class="icon"><i class="fas fa-quote-left"></i></span>
 										<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -255,12 +247,23 @@
 							<!-- Categories -->
 							<div class="single_widgets widget_category">
 								<h4 class="title">Kategoriyalar</h4>
-								<ul>
+								<ul class="flex-column blog-nav blog-nav--min" style="height: 19.875rem;">
 									<li><a href="#">Qabul <span>09</span></a></li>
 									<li><a href="#">Abituriyent <span>12</span></a></li>
 									<li><a href="#">Ta'lim <span>19</span></a>
 									</li><li><a href="#">Ma'naviyat <span>17</span></a></li>
 									<li><a href="#">Huquq <span>10</span></a></li>
+									<li><a href="#">Qabul <span>09</span></a></li>
+									<li><a href="#">Abituriyent <span>12</span></a></li>
+									<li><a href="#">Ta'lim <span>19</span></a>
+									</li><li><a href="#">Ma'naviyat <span>17</span></a></li>
+									<li><a href="#">Huquq <span>10</span></a></li>
+									<li><a href="#">Qabul <span>09</span></a></li>
+									<li><a href="#">Abituriyent <span>12</span></a></li>
+									<li><a href="#">Ta'lim <span>19</span></a>
+									</li><li><a href="#">Ma'naviyat <span>17</span></a></li>
+									<li><a href="#">Huquq <span>10</span></a></li>
+									<button class="btn btn-theme" id="more">+ Ko'proq</button>
 								</ul>
 							</div>
 							
@@ -474,6 +477,14 @@
 		<!-- ============================================================== -->
 		<!-- This page plugins -->
 		<!-- ============================================================== -->
+		<script>
+
+	
+			$("#more").click(function(){
+				$(".blog-nav").toggleClass("blog-nav--min");
+				$(this).text($(this).text() == "+ Ko'proq" ? "- Kamroq" : "+ Ko'proq");
+			});
+		</script>
 
 	</body>
 

@@ -140,12 +140,17 @@
 							<div class="page_sidebar category-sidebar hide-23">
 								 
 								<h4 class="side_title">Maqolalar kategoriyalari</h4>
-								<nav class="nav category-nav mt-4 flex-column">
+								<nav class="nav category-nav mt-4 flex-column blog-nav blog-nav--min">
 									<a class="nav-link active" href="#">Active category</a>
 									<a class="nav-link" href="#">Link to a category</a>
 									<a class="nav-link" href="#">Link to another category</a>
 									<a class="nav-link" href="#">Link to a category</a>
 									<a class="nav-link" href="#">Link to another category</a>
+									<a class="nav-link" href="#">Link to a category</a>
+									<a class="nav-link" href="#">Link to another category</a>
+									<a class="nav-link" href="#">Link to a category</a>
+									<a class="nav-link" href="#">Link to another category</a>
+									<button class="btn btn-theme" id="more">+ Ko'proq</button>
 								</nav>
 								
 							</div>
@@ -574,7 +579,15 @@
 		<!-- This page plugins -->
 		<!-- ============================================================== -->
 
+		<script>
+
+	
+			$("#more").click(function(){
+				$(".blog-nav").toggleClass("blog-nav--min");
+				$(this).text($(this).text() == "+ Ko'proq" ? "- Kamroq" : "+ Ko'proq");
+			});
+		</script>
+
 	</body>
 
-<!-- Mirrored from themezhub.net/learnup-demo-2/learnup/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 Aug 2021 08:33:46 GMT -->
 </html>

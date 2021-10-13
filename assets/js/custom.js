@@ -495,5 +495,22 @@ $(function() {
 		placeholder: "Choose Country",
 		allowClear: true
 	});
+
+	$('document').ready(function(){
+		$('#side-menu').metisMenu();
+		var $file = $('#image-file-input'),
+				$avatar = $('#profile-img');
+
+		// on file change
+		$file.on('change', function(event){
+			var fileName = $file.val().split( '\\' ).pop();
+			fileName = "assets/img/" + fileName;
+			if( fileName ){
+				console.log(fileName);
+				$avatar.attr('src',fileName);
+			}
+		});
+
+	});
 	
 });

@@ -59,12 +59,19 @@ label.btn-shop{
 
 .alert-theme{
   position: fixed;
-  right: 50%;
-  bottom: 1rem;
+  top: 4rem;
+  right: 1rem;
   display: none;
   align-items: center;
   min-width: 18rem;
-  transform: translate(50%);
+  box-shadow: 0 0.5rem 1rem rgba(100,123,156,.15);
+  border: 1px solid rgba(100,123,156,.3);
+  z-index: 2048;
+}
+
+.alert-theme.alert-danger{
+  box-shadow: 0 0.5rem 1rem rgba(243, 48, 102,.15);
+  border: 1px solid rgba(243, 48, 102,.1);
 }
 
 .alert-text{
@@ -183,4 +190,107 @@ label.btn-shop{
 .d-user-avater img{
   aspect-ratio: 1;
   object-fit: cover;
+}
+
+.profile-btn{
+  padding: 0 !important;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.profile-btn.dropdown-toggle::after{
+  display: none;
+}
+
+.profile-btn img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.dropdown .login_click{
+  border-radius: 4px;
+  height: 42px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #fff;
+  border: 1px solid #131b31;
+  cursor: pointer;
+  border: 1px solid rgba(100,123,156,.3)!important;
+  transition: all ease .4s;
+}
+
+.dropdown .login_click:hover{
+  transition: all ease .4s;
+  color: white;
+  background: #da0b4e;
+  border-color: #da0b4e!important;
+}
+
+.dropdown .login_click:active,.dropdown .login_click:focus{
+  color: white;
+  background-color: #BF1D51;
+  border-color: #da0b4e!important;
+  outline: none;
+}
+
+.widget_thumb_post .left img{
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+
+.category-name{
+  position: relative;
+}
+
+.category-name::after{
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background-color: #da0b4e;
+  opacity: .7;
+}
+
+.about-text h4,.about-text p{
+  margin-bottom: 1.5rem;
+}
+
+img{
+  width: 100%;
+}
+
+.blog-nav{
+  position: relative;
+  padding-bottom: 3.5rem;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+
+.blog-nav--min{
+  height: 18.375rem;
+}
+
+.blog-nav .btn{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.profile-img{
+  position: relative;
+}
+
+.edit-img{
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: unset;
+  transform: translateX(-50%);
 }

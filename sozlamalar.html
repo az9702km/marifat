@@ -69,7 +69,7 @@
 							<div class="dropdown" style="
 							position: relative;
 							top: 13px;">
-								<button class="btn btn-secondary dropdown-toggle" type="button" id="login" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<button class="login_click green light" type="button" id="login" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Azamat Sharipov
 								</button>
 								<div class="dropdown-menu" aria-labelledby="login">
@@ -104,7 +104,13 @@
 							<div class="dashboard-navbar">
 								
 								<div class="d-user-avater">
-									<img src="assets/img/user-3.jpg" class="img-fluid avater" alt="">
+									<div class="profile-img">
+										<img src="assets/img/user-3.jpg" class="img-fluid avater" id="profile-img" alt="">
+										<div class="custom-file edit-img">
+											<input type="file" class="custom-file-input" id="image-file-input" style="display: none;">
+											<label class="custom-file-label btn btn-primary btn-sm mb-0" for="image-file-input"><i class="fas fa-camera"></i></label>
+										</div>
+									</div>
 									<h4>Abdurashid Jurayev</h4>
 									<span>+998 91 369 25 81</span>
 								</div>
@@ -391,7 +397,7 @@
 		<!-- ============================================================== -->
 		<script src="assets/js/metisMenu.min.js"></script>	
 		<script>
-			$('#side-menu').metisMenu();
+			
 		</script>
 
 	</body>
